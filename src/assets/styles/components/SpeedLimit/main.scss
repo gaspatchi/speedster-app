@@ -1,0 +1,28 @@
+.SpeedLimit {
+	@include size(75px, 80px);
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--speedster-speed-limit);
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	transition: background-color 0.2s ease-in;
+	&__title {
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 1.2;
+		color: var(--speedster-speed-limit-title);
+		text-align: center;
+		transition: color 0.2s ease-in;
+	}
+	&__speed {
+		font-size: 24px;
+		font-weight: 700;
+		color: var(--speedster-speed-limit-value);
+		transition: color 0.2s ease-in;
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/*/**": true,
+		"**/__pycache__": true
+	},
+	"files.exclude": {
+		"node_modules/": true,
+		"**/__pycache__": true
+	},
+	"eslint.enable": true,
+	"i18n-ally.localesPaths": "src/locales",
+	"i18n-ally.keystyle": "nested"
+}

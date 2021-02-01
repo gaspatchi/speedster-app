@@ -1,0 +1,58 @@
+.NavigationItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	padding: 10px 0;
+	margin-right: 40px;
+	$item: &;
+	&:last-child {
+		margin-right: initial;
+	}
+	&_active {
+		#{$item}__icon {
+			background-color: var(--speedster-navigation-bar-link-active);
+		}
+		#{$item}__title {
+			color: var(--speedster-navigation-bar-link-active);
+		}
+	}
+	&_navigation {
+		#{$item}__icon {
+			mask-image: url(assets/icons/location.svg);
+			mask-repeat: no-repeat;
+			mask-size: contain;
+			mask-position: center;
+		}
+	}
+	&_violation {
+		#{$item}__icon {
+			mask-image: url(assets/icons/violation.svg);
+			mask-repeat: no-repeat;
+			mask-size: contain;
+			mask-position: center;
+		}
+	}
+	&_profile {
+		#{$item}__icon {
+			mask-image: url(assets/icons/profile.svg);
+			mask-repeat: no-repeat;
+			mask-size: contain;
+			mask-position: center;
+		}
+	}
+	&__icon {
+		@include size(28px);
+		flex-shrink: 0;
+		margin-bottom: 3px;
+		background-color: var(--speedster-navigation-bar-link);
+		transition: all 0.2s ease-in;
+	}
+	&__title {
+		font-size: 13px;
+		font-weight: 500;
+		color: var(--speedster-navigation-bar-link);
+		transition: all 0.2s ease-in;
+	}
+}

@@ -1,0 +1,57 @@
+.Notification {
+	position: fixed;
+	bottom: 260px;
+	max-width: calc(100vw - 40px);
+	background-color: var(--speedster-notification);
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	z-index: 4;
+	transition: background-color 0.2s ease-in;
+	&__content {
+		display: flex;
+		align-items: center;
+		padding: 10px 15px;
+	}
+	&__identity {
+		@include size(21px);
+		margin-right: 10px;
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		mask-position: center;
+		transition: background-color 0.2s ease-in;
+		&_alert {
+			background-color: var(--speedster-notification-alert);
+			mask-image: url(assets/icons/alert.svg);
+		}
+		&_camera {
+			background-color: var(--speedster-notification-camera);
+			mask-image: url(assets/icons/camera.svg);
+		}
+		&_sign {
+			@include size(25px);
+			mask-repeat: initial;
+			mask-size: initial;
+			mask-position: initial;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-image: url(assets/icons/sign.svg);
+		}
+	}
+	&__header {
+		display: flex;
+		flex-direction: column;
+		white-space: nowrap;
+		&-title {
+			font-size: 14px;
+			font-weight: 600;
+			color: var(--speedster-notification-header-title);
+			transition: color 0.2s ease-in;
+		}
+		&-description {
+			font-size: 12px;
+			font-weight: 500;
+			color: var(--speedster-notification-header-description);
+			transition: color 0.2s ease-in;
+		}
+	}
+}

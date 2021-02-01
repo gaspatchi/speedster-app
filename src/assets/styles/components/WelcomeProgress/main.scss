@@ -1,0 +1,18 @@
+.WelcomeProgress {
+	display: flex;
+	align-items: center;
+	&__step {
+		@include size(6px);
+		background-color: #dfdfdf;
+		border-radius: 100px;
+		margin-right: 7px;
+		transition: 0.3s ease-in-out;
+		&:last-child {
+			margin-right: initial;
+		}
+		&_active {
+			@include size(30px, 6px);
+			background-color: #c4c4c4;
+		}
+	}
+}

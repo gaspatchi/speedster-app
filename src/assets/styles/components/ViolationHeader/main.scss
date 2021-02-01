@@ -1,0 +1,8 @@
+.ViolationHeader {
+	margin-top: 20px;
+	&__title {
+		font-size: 22px;
+		font-weight: 600;
+		color: var(--speedster-violation-header);
+	}
+}

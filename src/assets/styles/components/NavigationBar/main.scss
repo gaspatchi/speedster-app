@@ -1,0 +1,15 @@
+.NavigationBar {
+	@include position(fixed, null 20px 15px 20px);
+	background-color: var(--speedster-navigation-bar);
+	overflow: hidden;
+	z-index: 5;
+	transition: background-color 0.2s ease-in;
+	&__page {
+	}
+	&__navigation {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 70px;
+	}
+}

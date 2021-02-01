@@ -1,0 +1,49 @@
+.TripStatus {
+	@include position(fixed, null null 150px null);
+	display: flex;
+	align-items: center;
+	padding: 12px 25px;
+	background-color: var(--speedster-trip-status);
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	transition: background-color 0.2s ease-in;
+	$status: &;
+	&_disabled {
+		background-color: var(--speedster-trip-status-disabled);
+		#{$status}__goto {
+			&-icon {
+				mask-size: 50%;
+				mask-image: url(assets/icons/exclamation.svg);
+			}
+		}
+	}
+	&__title {
+		font-weight: 500;
+		color: white;
+		margin-right: 10px;
+		white-space: nowrap;
+	}
+	&__goto {
+		@include size(30px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--speedster-trip-status-icon);
+		border-radius: 8px;
+		transition: background-color 0.2s ease-in;
+		&-spinner {
+			@include size(50%);
+			background-color: white;
+			border-radius: 100px;
+		}
+		&-icon {
+			@include size(100%);
+			mask-size: 40%;
+			mask-image: url(assets/icons/right-arrow.svg);
+			mask-repeat: no-repeat;
+			mask-position: center;
+			background-color: white;
+		}
+	}
+}

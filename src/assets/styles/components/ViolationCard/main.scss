@@ -1,0 +1,80 @@
+.ViolationCard {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 20px 15px;
+	margin-right: 20px;
+	color: white;
+	border-radius: 18px;
+	$card: &;
+	&:last-child {
+		margin-right: initial;
+	}
+	&_value {
+		background: var(--speedster-violation-card-value-body);
+		color: var(--speedster-violation-card-value-content);
+		box-shadow: 0 2.5px 8.8px rgba(0, 0, 0, 0.024), 0 9.1px 24.4px rgba(0, 0, 0, 0.03),
+			0 25.5px 58.8px rgba(0, 0, 0, 0.046), 0 86px 195px rgba(0, 0, 0, 0.08);
+	}
+	&_icon {
+		background: linear-gradient(
+			to bottom left,
+			hsl(330, 100%, 45.1%) 0%,
+			hsl(331, 89.25%, 47.36%) 7.8%,
+			hsl(330.53, 79.69%, 48.96%) 14.6%,
+			hsl(328.56, 70.89%, 49.96%) 20.5%,
+			hsl(324.94, 63.52%, 50.4%) 25.8%,
+			hsl(319.21, 54.99%, 50.3%) 30.6%,
+			hsl(310.39, 46.14%, 49.68%) 35.2%,
+			hsl(296.53, 39.12%, 49.7%) 39.8%,
+			hsl(280.63, 42.91%, 53.43%) 44.5%,
+			hsl(265.14, 47.59%, 56.84%) 49.7%,
+			hsl(250.13, 52.52%, 59.88%) 55.4%,
+			hsl(235.88, 59.2%, 60.91%) 61.9%,
+			hsl(225.81, 68.23%, 57.85%) 69.4%,
+			hsl(218.93, 74.97%, 54.21%) 78.2%,
+			hsl(213.89, 79.63%, 49.97%) 88.3%,
+			hsl(210, 100%, 45.1%) 100%
+		);
+		#{$card}__header {
+			&-identity {
+				padding: 5px;
+				display: inline-flex;
+				background-color: #00000033;
+			}
+		}
+	}
+	&__header {
+		flex-direction: column;
+		&-identity {
+			margin-bottom: 5px;
+			border-radius: 100px;
+			&-value {
+				font-size: 32px;
+				font-weight: 700;
+				line-height: 1;
+			}
+			&-icon {
+				@include size(24px);
+				mask-repeat: no-repeat;
+				mask-size: contain;
+				mask-position: center;
+				&_emblem {
+					mask-size: contain;
+					mask-image: url(assets/icons/emblem.svg);
+					background-color: #ffffff;
+				}
+			}
+		}
+		&-title {
+			font-size: 14px;
+			font-weight: 600;
+			margin-bottom: 3px;
+		}
+		&-description {
+			font-size: 12px;
+			font-weight: 500;
+		}
+	}
+}

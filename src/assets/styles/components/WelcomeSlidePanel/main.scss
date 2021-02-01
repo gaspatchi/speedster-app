@@ -1,0 +1,38 @@
+.WelcomeSlidePanel {
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	&__top-content {
+		padding: 20px;
+	}
+	&__content {
+		padding: 20px;
+		background-color: var(--speedster-body-color);
+	}
+	&__actions {
+	}
+	&__action {
+		margin-bottom: 20px;
+		&_skip {
+			margin-top: 40px;
+			margin-bottom: initial;
+			font-weight: 500;
+			text-align: center;
+			color: #b5b5b5;
+		}
+		&-icon {
+			@include size(20px);
+			margin-right: 5px;
+			background-position: center;
+			background-repeat: no-repeat;
+			&_geoposition {
+				background-image: var(--speedster-permission-geolocation-icon);
+				background-size: contain;
+				&-success {
+					background-image: var(--speedster-permission-geolocation-success);
+				}
+			}
+		}
+	}
+}

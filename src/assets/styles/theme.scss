@@ -1,0 +1,109 @@
+:root {
+	--speedster-white-color: white;
+	--speedster-black-color: black;
+
+	--speedster-body-color: white;
+
+	--speedster-user-location: #ffffff;
+	--speedster-user-location-icon-background: #2787f5;
+
+	--speedster-road-background-pillar: black;
+
+	--speedster-permission-geolocation-icon: url(../icons/geoposition-light.svg);
+	--speedster-permission-geolocation-success: url(../icons/check-light.svg);
+
+	--speedster-road-scene: linear-gradient(
+		180deg,
+		rgba(240, 237, 241, 1) 0%,
+		rgba(240, 240, 240, 1) 100%
+	);
+
+	--speedster-navigation-bar: white;
+	--speedster-navigation-bar-link: #99a2ad;
+	--speedster-navigation-bar-link-active: #2975cc;
+
+	--speedster-workspace-header-separator: #d4d4d4;
+
+	--speedster-travel-speed-units: #8a8a8a;
+
+	--speedster-notification: black;
+	--speedster-notification-alert: #ffe600;
+	--speedster-notification-camera: #ffffff;
+
+	--speedster-notification-header-title: #ffffff;
+	--speedster-notification-header-description: #aaaaaa;
+
+	--speedster-trip-status: black;
+	--speedster-trip-status-disabled: #373737;
+	--speedster-trip-status-icon: #272727;
+
+	--speedster-speed-limit: white;
+	--speedster-speed-limit-title: #8b8b8b;
+	--speedster-speed-limit-value: black;
+
+	--speedster-modal-window: white;
+	--speedster-modal-window-anchor: white;
+	--speedster-modal-window-title: black;
+	--speedster-modal-window-description: grey;
+	--speedster-modal-window-image-geolocation: url(../images/no-gps-white.svg);
+	--speedster-modal-window-image-wakelock: url(../images/disable-sleep-timer-white.svg);
+
+	--speedster-user-profile-border: #d3dae2;
+	--speedster-user-profile-header: black;
+	--speedster-violation-header: black;
+
+	--speedster-violation-card-value-body: white;
+	--speedster-violation-card-value-content: black;
+
+	--speedster-profile-goto-border: #dde1e6;
+	--speedster-profile-goto-title: black;
+	--speedster-profile-goto-goto: black;
+}
+
+body[data-theme="dark"] {
+	--speedster-white-color: #191919;
+	--speedster-black-color: #e5e5e5;
+
+	--speedster-body-color: #1f1f1f;
+	--speedster-user-location: #969696;
+	--speedster-user-location-icon-background: #191919;
+	--speedster-road-background-pillar: #414141;
+
+	--speedster-permission-geolocation-icon: url(../icons/geoposition-dark.svg);
+	--speedster-permission-geolocation-success: url(../icons/check-dark.svg);
+
+	--speedster-road-scene: linear-gradient(180deg, rgb(35, 35, 35) 0%, rgb(20, 20, 20) 100%);
+
+	--speedster-navigation-bar: #2d2d2d;
+	--speedster-navigation-bar-link: #7a7a7a;
+	--speedster-navigation-bar-link-active: #ffffff;
+
+	--speedster-workspace-header-separator: #353535;
+
+	--speedster-notification: #383838;
+
+	--speedster-trip-status: #1a73e8;
+	--speedster-trip-status-disabled: #004fd0;
+	--speedster-trip-status-icon: #3f8ef7;
+
+	--speedster-speed-limit: #e5e5e5;
+	--speedster-speed-limit-title: black;
+	--speedster-speed-limit-value: black;
+
+	--speedster-modal-window: #2d2d2d;
+	--speedster-modal-window-anchor: black;
+	--speedster-modal-window-title: #e5e5e5;
+	--speedster-modal-window-description: #7a7a7a;
+	--speedster-modal-window-image-geolocation: url(../images/no-gps-dark.svg);
+	--speedster-modal-window-image-wakelock: url(../images/disable-sleep-timer-dark.svg);
+	--speedster-user-profile-border: #505050;
+	--speedster-user-profile-header: #e5e5e5;
+	--speedster-violation-header: #e5e5e5;
+
+	--speedster-violation-card-value-body: #424242;
+	--speedster-violation-card-value-content: #e5e5e5;
+
+	--speedster-profile-goto-title: #e5e5e5;
+	--speedster-profile-goto-goto: #747474;
+	--speedster-profile-goto-border: #505050;
+}

@@ -1,0 +1,46 @@
+.ObjectNotifier {
+	$notifier: &;
+	&_low {
+		#{$notifier}__outline {
+			background-color: rgba(199, 199, 199, 0.1);
+		}
+		#{$notifier}__circle {
+			background-color: #c7c7c7;
+		}
+	}
+	&_medium {
+		#{$notifier}__outline {
+			background-color: rgba(255, 162, 0, 0.1);
+		}
+		#{$notifier}__circle {
+			background-color: #ffa000;
+		}
+	}
+	&_high {
+		#{$notifier}__outline {
+			background-color: rgba(255, 0, 0, 0.1);
+		}
+		#{$notifier}__circle {
+			background-color: rgba(255, 0, 0, 1);
+		}
+	}
+	&__outline {
+		@include size(50px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100px;
+		transition: all 0.5s ease-in-out;
+	}
+	&__circle {
+		@include size(36px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 100px;
+		transition: all 0.5s ease-in-out;
+	}
+	&__sensitivity {
+		@include size(80%);
+	}
+}

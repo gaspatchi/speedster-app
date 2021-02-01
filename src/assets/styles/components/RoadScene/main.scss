@@ -1,0 +1,5 @@
+.RoadScene {
+	@include position(fixed, 0);
+	background: var(--speedster-road-scene);
+	transition: background 0.2s ease-in;
+}

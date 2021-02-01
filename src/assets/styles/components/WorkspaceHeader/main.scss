@@ -1,0 +1,25 @@
+.WorkspaceHeader {
+	@include position(fixed, calc(20px + env(safe-area-inset-top, 0)) 20px null 20px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	&__top {
+	}
+	&__separator {
+		width: 100%;
+		height: 1px;
+		background-color: var(--speedster-workspace-header-separator);
+		border-radius: 100px;
+		margin: 16px 0;
+		transition: background-color 0.2s ease-in;
+	}
+
+	&__bottom {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+}

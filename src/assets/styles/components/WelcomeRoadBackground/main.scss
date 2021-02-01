@@ -1,0 +1,49 @@
+.WelcomeRoadBackground {
+	@include position(fixed, 0 0 0 0);
+	background-position: bottom left;
+	&__sign {
+		position: absolute;
+		right: 5%;
+		top: 25%;
+		display: flex;
+		justify-content: center;
+		&-scoreboard {
+			@include size(80px);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+			border: 8px solid red;
+			border-radius: 100px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+			box-sizing: border-box;
+			&-value {
+				position: absolute;
+				&-number {
+					position: relative;
+					bottom: -1px;
+					font-size: 26px;
+					font-weight: 600;
+				}
+			}
+		}
+		&-pillar {
+			@include size(6px, 230px);
+			position: absolute;
+			background-color: var(--speedster-road-background-pillar);
+			border-radius: 100px;
+			z-index: -1;
+		}
+	}
+	&__road {
+		@include position(fixed, 0 0 0 0);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: bottom left;
+		background-image: url(assets/images/road.svg);
+	}
+	&__sun {
+		position: fixed;
+		@include size(30%);
+	}
+}

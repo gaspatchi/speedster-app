@@ -1,0 +1,37 @@
+.UserProfile {
+	display: flex;
+	align-items: center;
+	$profile: &;
+	&_vertical {
+		flex-direction: column;
+		justify-content: center;
+		#{$profile}__header {
+			padding-left: initial;
+			padding-top: 10px;
+			font-size: 22px;
+		}
+		#{$profile}__avatar {
+			@include size(55px);
+		}
+	}
+	&__avatar {
+		@include size(50px);
+		border-radius: 100px;
+		border: 4px solid var(--speedster-user-profile-border);
+		overflow: hidden;
+		flex-shrink: 0;
+		&-image {
+			@include size(inherit);
+		}
+	}
+	&__header {
+		flex: 1;
+		color: var(--speedster-user-profile-header);
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		padding-left: 15px;
+		font-size: 20px;
+		font-weight: 600;
+		overflow: hidden;
+	}
+}
